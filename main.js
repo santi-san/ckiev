@@ -2,8 +2,8 @@
 
 
 
-const headerHeight = document.querySelector('header').offsetHeight;
+// const headerHeight = document.querySelector('header').offsetHeight;
 
-stickybits('.asd', {
-    stickyBitStickyOffset: headerHeight
-});
+// stickybits('.asd', {
+//     stickyBitStickyOffset: headerHeight
+// });

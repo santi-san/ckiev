@@ -2,6 +2,7 @@
     position: relative;
     outline: 2px solid black;
 }*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 .container .section {
     margin-top: 2rem;
     width: 100%;
@@ -9,12 +10,15 @@
     background: #fff;
     outline: 2px solid brown;
 } 
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
 header {
     background: #333;
     padding: 20px;
     transition: 0.5s;
-position: sticky;
-top: 0;
+    position: sticky;
+    top: 0;
 }
 header a {
     display: block;
@@ -24,10 +28,10 @@ header a {
     text-decoration: none;
     color: #fff;
 }
-.wrapper {
-    /* display: flex; */
-}
-
+ /* .wrapper {
+   display: flex; 
+}*/
+/* 
 .container section {
     width: 70%;
     padding: 0 35px;
@@ -44,4 +48,73 @@ header a {
 footer {
     height: 1800px;
     background: #ccc;;
+} */
+#hacemos {
+    color: white;
+}
+
+.h1-title-small {
+    font-size: 1rem;
+}
+.h2-title-secondary {
+    font-size: 3rem;
+}
+
+.color-amarillo {
+    color: #E9D277;
+}
+.color-kiev {
+    color: #E3716F;
+}
+.color-dark {
+    color: black;
+}
+
+.hacemos-title {
+    text-transform: uppercase;
+    font-size: 2.75rem;
+    font-weight: bold;
+}
+
+/* .hacemos-body {
+    
+} */
+
+.btn-hacemos-read-more {
+    border-radius: 0px;
+    background-color: #E3716F;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.yt_videos_wrapper_16_9-big {
+  padding-bottom: 56.35%;
+  position: relative;
+}
+.yt_videos_wrapper_16_9-big video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.data-title {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.data-number {
+    color: #E3716F;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.card-exito-body {
+    background-color: black;
+    padding: 1rem
+}
+.card-exito-body .color-amarillo {
+    font-size: 1rem;
 }
