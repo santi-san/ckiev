@@ -7,13 +7,52 @@
 }*/
 
 
+
+/* @font-face {
+    font-family: "extra-condensed-light";
+    src: url("./fonts/NotoSans-ExtraCondensedLight.ttf");
+    } 
+    @font-face {
+    font-family: "extra-condensed-semi-bold";
+    src: url("./fonts/NotoSans-ExtraCondensedSemiBold.ttf");
+    }
+    @font-face {
+        font-family: "extra-condensed-extra-bold";
+        src: url("./fonts/NotoSans-SemiCondensedExtraBold.ttf");
+    }
+    @font-face {
+        font-family: "semi-condensed-medium";
+        src: url("./fonts/NotoSans-SemiCondensedMedium.ttf");
+    }
+    @font-face {
+        font-family: "semi-condensed-extra-bold";
+        src: url("./fonts/NotoSans-SemiCondensedExtraBold.ttf");
+    } 
+    .extra-condensed-light {
+        font-family:  extra-condensed-light;
+    }
+    .extra-condensed-semi-bold {
+        font-family:  extra-condensed-semi-bold;
+    }
+    .extra-condensed-extra-bold {
+        font-family:  extra-condensed-extra-bold;
+    }
+    .semi-condensed-medium {
+        font-family:  semi-condensed-medium;
+    }
+    .semi-condensed-extra-bold {
+        font-family:  semi-condensed-extra-bold;
+    }
+*/
+
+/*
+    Condensed Light - para las mas finas    (title sections)
+    Extra Condensed Black - Gruesas         (h1-2,3)
+    Extra Condensed Medium - Medias         (p)
+*/
 @font-face {
     font-family: "condensed-light";
     src: url("./fonts/NotoSans-CondensedLight.ttf");
-}
-@font-face {
-    font-family: "extra-condensed-light";
-    src: url("./fonts/NotoSans-ExtraCondensedLight.ttf");
 }
 @font-face {
     font-family: "extra-condensed-medium";
@@ -23,29 +62,8 @@
     font-family: "extra-condensed-black";
     src: url("./fonts/NotoSans-ExtraCondensedBlack.ttf");
 }
-@font-face {
-    font-family: "extra-condensed-semi-bold";
-    src: url("./fonts/NotoSans-ExtraCondensedSemiBold.ttf");
-}
-@font-face {
-    font-family: "extra-condensed-extra-bold";
-    src: url("./fonts/NotoSans-SemiCondensedExtraBold.ttf");
-}
-@font-face {
-    font-family: "semi-condensed-medium";
-    src: url("./fonts/NotoSans-SemiCondensedMedium.ttf");
-}
-@font-face {
-    font-family: "semi-condensed-extra-bold";
-    src: url("./fonts/NotoSans-SemiCondensedExtraBold.ttf");
-}
-
-
 .condensed-light {
     font-family: condensed-light;
-}
-.extra-condensed-light {
-    font-family:  extra-condensed-light;
 }
 .extra-condensed-medium {
     font-family:  extra-condensed-medium;
@@ -53,18 +71,14 @@
 .extra-condensed-black {
     font-family:  extra-condensed-black;
 }
-.extra-condensed-semi-bold {
-    font-family:  extra-condensed-semi-bold;
-}
-.extra-condensed-extra-bold {
-    font-family:  extra-condensed-extra-bold;
-}
-.semi-condensed-medium {
-    font-family:  semi-condensed-medium;
-}
-.semi-condensed-extra-bold {
-    font-family:  semi-condensed-extra-bold;
-}
+
+.scroll_navbar {
+    padding: .2rem 0px .2rem 0;
+    transition-duration: 0.6s;
+  }
+  .navbar {
+      transition: all 350ms;
+  }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
@@ -76,23 +90,10 @@
     outline: 2px solid brown;
 } 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'extra-condensed-medium', sans-serif;
 }
-header {
-    background: #333;
-    padding: 20px;
-    transition: 0.5s;
-    position: sticky;
-    top: 0;
-}
-header a {
-    display: block;
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0;
-    text-decoration: none;
-    color: #fff;
-}
+
  /* .wrapper {
    display: flex; 
 }*/
@@ -137,13 +138,12 @@ footer {
 
 .hacemos-title {
     text-transform: uppercase;
-    font-size: 2.75rem;
-    font-weight: bold;
+    font-size: clamp(2.7rem, 3vw, 4.3rem);
 }
 
-/* .hacemos-body {
-    
-} */
+.hacemos-body {
+    font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+}
 
 .btn-hacemos-read-more {
     border-radius: 0px;
@@ -183,12 +183,16 @@ footer {
 .card-exito-body .color-amarillo {
     font-size: 1rem;
 }
-
+.exito-tags {
+    font-size: .8rem;
+    display: flex;
+    width: 100%;
+}
 .contactanos {
-    font-size: 2.8rem;
+    font-size: clamp(4rem, 10vw, 3.3rem);;
 }
 @media (min-width: 576px) { 
-    .contactanos {
+    /* .contactanos {
         font-size: 4rem;
-    }
+    } */
  }
