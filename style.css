@@ -6,7 +6,18 @@
     outline: 2px solid black;
 }*/
 
-
+html::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+    background-image: url("https://demo.yootheme.com/wordpress/wp-content/themes/yootheme/vendor/assets/uikit-themes/master-vibe/images/base-body-overlay.gif");
+    opacity: .08;
+    pointer-events: none;
+  }
 
 /* @font-face {
     font-family: "extra-condensed-light";
@@ -79,7 +90,15 @@
   .navbar {
       transition: all 350ms;
   }
-
+  html {
+      background-color: #000;
+  }
+  .navbar-light .navbar-brand {
+    color: white;
+}
+.bg-kiev {
+    background-color: #D97775;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 .container .section {
@@ -94,6 +113,17 @@ body {
     font-family: 'extra-condensed-medium', sans-serif;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+
+section > h1:first-child {
+    font-size: 1.875rem;
+}
  /* .wrapper {
    display: flex; 
 }*/
@@ -138,11 +168,11 @@ footer {
 
 .hacemos-title {
     text-transform: uppercase;
-    font-size: clamp(2.7rem, 3vw, 4.3rem);
+    font-size: clamp(2.7rem, 3vw, 6.398rem);
 }
 
 .hacemos-body {
-    font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+    font-size: clamp(1.2rem, 1.3vw, 2.125rem);
 }
 
 .btn-hacemos-read-more {
@@ -151,8 +181,15 @@ footer {
     color: white;
     font-weight: bold;
 }
-
-
+.btn-hacemos-read-more::after {
+    display: inline-block;
+    margin-left: .5rem;
+    vertical-align: .1em;
+    content: "";
+    border-top: .4em solid transparent;
+    border-left: .4em solid #fff;
+    border-bottom: .4em solid transparent;
+}
 
 .yt_videos_wrapper_16_9-big {
   padding-bottom: 56.35%;
@@ -168,12 +205,12 @@ footer {
 
 .data-title {
     color: black;
-    font-size: 1.8rem;
+    font-size: clamp(1.8rem, 10vw, 2.563rem)    ;
     font-weight: 700;
 }
 .data-number {
     color: #E3716F;
-    font-size: 4rem;
+    font-size: clamp(4.8rem, 10vw, 7.5rem);
     font-weight: 700;
 }
 .card-exito-body {
@@ -189,10 +226,32 @@ footer {
     width: 100%;
 }
 .contactanos {
-    font-size: clamp(4rem, 10vw, 3.3rem);;
+    font-size: clamp(4rem, 10vw, 6.25rem);
+    color: #ECD166;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: -3px 4px 2px #000000;
+    transition: all 350ms ease-in-out;
+}
+.contactanos:hover {
+    text-shadow: none;
+    color:white;
 }
 @media (min-width: 576px) { 
     /* .contactanos {
         font-size: 4rem;
     } */
- }
+}
+.icons-fa {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.icons-fa > a {
+    color: white;
+    margin-left: 1.125rem;
+
+}
