@@ -14,7 +14,7 @@ html::after {
     left: 0;
     right: 0;
     z-index: 1100;
-    background-image: url("https://demo.yootheme.com/wordpress/wp-content/themes/yootheme/vendor/assets/uikit-themes/master-vibe/images/base-body-overlay.gif");
+    background-image: url("./img/base-body-overlay.gif");
     opacity: .08;
     pointer-events: none;
   }
@@ -145,7 +145,7 @@ footer {
     height: 1800px;
     background: #ccc;;
 } */
-#hacemos {
+#hacemos,#porquekiev {
     color: white;
 }
 
