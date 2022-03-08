@@ -217,7 +217,7 @@ footer {
 }
 .data-number {
     color: #E3716F;
-    font-size: clamp(4.8rem, 10vw, 7.5rem);
+    font-size: clamp(4.8rem, 5vw, 7.5rem);
     font-weight: 700;
 }
 .card-exito-body {
