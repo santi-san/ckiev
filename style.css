@@ -124,7 +124,7 @@ body {
 
 
 section > h1:first-child {
-    font-size: 1.875rem;
+    font-size: clamp(1.4rem, 5vw, 1.875rem);
 }
 
 .fixed-top {
@@ -146,6 +146,7 @@ section > h1:first-child {
     transition: all ease-out 0ms;
     filter: brightness(50%);
     -webkit-filter: brightness(50%);
+    padding-bottom: calc(100vh - 3rem);
 }
  /* .wrapper {
    display: flex; 
@@ -285,4 +286,41 @@ footer {
     color: white;
     margin-left: 1.125rem;
 
+}
+.iniRecCtnr  {
+    opacity: 1;
+    position: absolute;
+    z-index: 100;
+    width: 80%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 576px) { 
+    .qweqweqwe {
+        background: #000 url('./img/kiev.gif') no-repeat center center;
+        background-size: auto;
+        background-size: auto;
+        background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        -webkit-transition: all ease-out 0ms;
+        -moz-transition: all ease-out 0ms;
+        -o-transition: all ease-out 0ms;
+        transition: all ease-out 0ms;
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+        padding-bottom: calc(60vh - 3rem);
+    }
+    .iniRecCtnr  {
+        opacity: 1;
+        position: absolute;
+        z-index: 100;
+        width: 80%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
