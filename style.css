@@ -240,7 +240,7 @@ footer {
     width: 100%;
 }
 .contactanos {
-    font-size: clamp(3.5rem, 10vw, 6.25rem);
+    font-size: clamp(1.3rem, 5vw, 1.875rem);
     color: #ECD166;
     text-decoration: none;
     text-transform: uppercase;
