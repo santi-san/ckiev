@@ -130,6 +130,23 @@ section > h1:first-child {
 .fixed-top {
     top: 20px;
 }
+
+
+.qweqweqwe {
+    background: #000 url('./img/kiev.gif') no-repeat center center;
+    background-size: auto;
+    background-size: auto;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -webkit-transition: all ease-out 0ms;
+    -moz-transition: all ease-out 0ms;
+    -o-transition: all ease-out 0ms;
+    transition: all ease-out 0ms;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
  /* .wrapper {
    display: flex; 
 }*/
