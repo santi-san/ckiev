@@ -121,7 +121,7 @@ html::after {
     height: 100px;
     position: absolute;
     top: 40%;
-    right: -25px;
+    right: 0;
     display: block !important;
     border:0px solid black;
 }
@@ -392,18 +392,17 @@ footer {
     display: flex;
     width: 100%;
 }
-.contactanos {
-    font-size: clamp(1.3rem, 5vw, 1.875rem);
-    color: #ECD166;
+#contacto ul li a {
+    color: white;
+    font-size: clamp(1rem, 5vw, 1.4rem);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: -3px 4px 2px #000000;
-    transition: all 350ms ease-in-out;
 }
-.contactanos:hover {
+
+#contacto ul li a:hover {
     text-shadow: none;
-    color:white;
+    color:#000;
 }
 @media (min-width: 576px) { 
     .yt_videos_wrapper_16_9-big {
