@@ -198,14 +198,14 @@ footer {
     width: 85%;
     height: 60%;
     padding: 0;
-    margin-bottom: 8px;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     background: #444;
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: repeat;
-      background-image: none;
-      background-size: auto;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-image: none;
+    background-size: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -216,12 +216,9 @@ footer {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    background-image: url(./img/galeria-trabajos/img-polaris.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-color: transparent;
     position: relative;
-  }
+}
  
   .lightbox-container {
     position: fixed;
@@ -248,10 +245,14 @@ footer {
     z-index: 99995;
     bottom: 0;
   }
-  /* .lightbox-container.show {
-    transform: translateX(0);
-    opacity: 100%;
-  } */
+  .lightbox-tab {
+    width: 85%;
+    padding: 0;
+    background: black;
+    padding: .8rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
   .show {
     transform: translateX(0);
     opacity: 100%;
