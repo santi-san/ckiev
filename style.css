@@ -88,6 +88,11 @@ html::after {
     top: 0 !important;
     background-color: #D97775 !important;
   }
+  .scroll_navbar2 {
+    padding: .2rem 0px .2rem 0;
+    top: 0 !important;
+    background-color: #D97775 !important;
+  }
   .navbar {
       transition: all 450ms;
   }
