@@ -348,6 +348,8 @@ footer {
   /* padding-bottom: 40vh; */
   padding-bottom: 100%;
 
+  width: 100%;
+
   position: relative;
 }
 .yt_videos_wrapper_16_9-big video {
