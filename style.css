@@ -106,7 +106,31 @@ html::after {
     /* background-color: #D97775; */
     background-color: transparent;
 }
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    margin-left: -20px;
+    display: block !important;
+    border:0px solid black;
+}
 
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right: -25px;
+    display: block !important;
+    border:0px solid black;
+}
+.owl-prev i, .owl-next i {transform: scale(2,5);
+    color: #000;
+    -webkit-transform: scale(2,5);
+     -moz-transform: scale(2,5);
+     -ms-transform: scale(2,5); 
+     -o-transform: scale(2,5); }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 .container .section {
     margin-top: 2rem;
