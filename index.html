@@ -20,9 +20,9 @@
 </head>
 <body>
     <header style="z-index: 99;">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-kiev">
+        <nav class="navegacion navbar navbar-expand-lg fixed-top navbar-light bg-kiev">
             <div class="container-fluid ps-5 pe-5 justify-content-center">
-                <button id="nav-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+                <button id="nav-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="34" height="34" fill="url(#pattern0)"/>
                         <defs>
@@ -33,22 +33,22 @@
                         </defs>
                     </svg>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav w-100 justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#hacemos">SERVICIOS</a>
+                            <a class="nav-link"  href="#hacemos">SERVICIOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#porquekiev">POR QUÉ KIEV</a>
+                            <a class="nav-link"  href="#porquekiev">POR QUÉ KIEV</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#casosdeexito">CASOS DE ÉXITO</a>
+                            <a class="nav-link"  href="#casosdeexito">CASOS DE ÉXITO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                            <a class="nav-link"  href="#nosotros">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">CONTACTO</a>
+                            <a class="nav-link"  href="#contacto">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
@@ -363,7 +363,7 @@
         <!-- CONFÍAN EN NOSOTROS -->
         <section id="confian" class="p-3 p-lg-5" style="background-color: #fff;">
             <h1 class="color-dark"><span class="extra-condensed-black">CONFÍAN</span> EN NOSOTROS</h1>
-            <div class="py-4 owl-logos owl-carousel owl-theme aos-init aos-animate" data-aos="fade-up">
+            <div class="py-4 owl-logos owl-carousel owl-theme">
                 <div><img class="img-fluid" src="./img/trust/araucarias.png" alt="araucarias"></div>
                 <div><img class="img-fluid" src="./img/trust/atlanta.png" alt="atlanta"></div>
                 <div><img class="img-fluid" src="./img/trust/bernat.png" alt="bernat"></div>
@@ -441,6 +441,18 @@
          </div>
     </footer>
     <script>
+        // collapse nav after click link
+        $('.nav-link').on('click',function() {
+            $('.navbar-collapse').collapse('hide');
+        });
+
+        // add background to the nav after click the collapsable button
+          var elemento = document.getElementById('nav-toggler');
+          var menud = document.querySelector('.navegacion');
+          $('.navbar-toggler').on('click',function() {
+            console.log('hola');
+            menud.classList.toggle("scroll_navbar");
+          });
         //getting all required elements
 
         const iframe_src = [
@@ -496,33 +508,19 @@
                         if (event.keyCode == 27) {
                             previewBox.classList.remove("show");
                             document.querySelector("body").style.overflowY = "scroll";
+                            previewIframe.src = '';
                         } 
                     }
                     closeIcon.onclick = ()=>{
                         previewBox.classList.remove("show");
                         document.querySelector("body").style.overflowY = "scroll";
+                        previewIframe.src = '';
                     }
                 }
             } 
         }
     
     </script>
-    <!-- <script>
-
-        document.getElementById('nav-toggler').addEventListener('click', function() {
-           if ( $('.nav').hasClass('vjvj') ) {
-                $('.navbar').addClass('vjvj');
-                document.querySelector('.navbar').toggle('vjvj')
-            }
-            else  {
-                $('.navbar').removeClass('vjvj');
-            }
-        });
-
-        $(document).ready(function() {
-                $("#inicioVdoExplainer2")[0].play();
-        });
-    </script> -->
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -593,7 +591,7 @@
             loop:true,
             margin:10,
             autoplay:true,
-            autoplayTimeout:2000,
+            autoplayTimeout:1000,
             autoplayHoverPause:true,
             nav:false,
             dots:false,

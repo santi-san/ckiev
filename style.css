@@ -195,7 +195,7 @@ footer {
     align-items: center;
   }
   .lightbox-container .lightbox-data {
-    width: 85%;
+    width: 60%;
     height: 60%;
     padding: 0;
     border-top-left-radius: 8px;
@@ -246,7 +246,7 @@ footer {
     bottom: 0;
   }
   .lightbox-tab {
-    width: 85%;
+    width: 60%;
     padding: 0;
     background: black;
     padding: .8rem;
@@ -316,7 +316,9 @@ footer {
 }
 
 .yt_videos_wrapper_16_9-big {
-  padding-bottom: 40vh;
+  /* padding-bottom: 40vh; */
+  padding-bottom: 100%;
+
   position: relative;
 }
 .yt_videos_wrapper_16_9-big video {
@@ -473,6 +475,19 @@ footer {
         color: #E9D277;
         font-size: .8rem;
     }
+
+
+
+
+    .lightbox-container .lightbox-data {
+        width: 90%;
+        height: 34%;
+    }
+     
+      .lightbox-tab {
+        width: 90%;
+        padding: .6rem;
+      }
 }
 
 /* que hacemos */
