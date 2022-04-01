@@ -262,9 +262,7 @@
                             </div>
                         </div>
                     </div>
-                  </div>
-           
-                
+                </div>
             </div>
         </section>
         <!-- POR QUE CASAKIEV-->
@@ -482,42 +480,19 @@
          </div>
     </footer>
     <script>
-        // hacemos on click/change scroll to
-        $('#flush-headingOne').on('click', function() {
-            $('html, body').animate({
-            scrollTop: $("#flush-headingOne").offset().top -50
-            }, 700);
-        });
-        $('#flush-headingTwo').on('click', function() {
-            $('html, body').animate({
-            scrollTop: $("#flush-headingTwo").offset().top -50
-            }, 700);
-        });
-        $('#flush-headingThree').on('click', function() {
-            $('html, body').animate({
-            scrollTop: $("#flush-headingThree").offset().top -50
-            }, 700);
-        });
-        $('#flush-headingFour').on('click', function() {
-            $('html, body').animate({
-            scrollTop: $("#flush-headingFour").offset().top -50
-            }, 700);
-        });
-        $('#flush-headingFive').on('click', function() {
-            $('html, body').animate({
-            scrollTop: $("#flush-headingFive").offset().top -50
-            }, 700);
-        });
-        $('#flush-headingSix').on('click', function() {
-            $('html, body').animate({
-            scrollTop: $("#flush-headingSix").offset().top -50
-            }, 700);
-        });
-        $('#flush-headingSeven').on('click', function() {
-            $('html, body').animate({
-            scrollTop: $("#flush-headingSeven").offset().top -50
-            }, 700);
-        });
+        $('.collapse').on('shown.bs.collapse', function(e) {
+            var $card = $(this).closest('.accordion-item');
+            var $open = $($(this).data('parent')).find('.collapse.show');
+            
+            var additionalOffset = 0;
+            if($card.prevAll().filter($open.closest('.accordion-item')).length !== 0)
+            {
+                  additionalOffset =  $open.height();
+            }
+            $('html,body').animate({
+              scrollTop: $card.offset().top - additionalOffset - 50
+            }, 500);
+          });
         // on resize toggle show accordion 
         function resize() {
             if ($(window).width() > 970) {
@@ -528,7 +503,6 @@
                 $('.accordion-collapse').removeClass('show');
                 $('.accordion-button').show();
             }
-
         }
         
         $(document).ready( function() {
