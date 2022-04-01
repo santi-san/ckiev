@@ -552,6 +552,11 @@ footer {
 
 
   }
+
+
+  .accordion-body {
+      padding: 0;
+  }
   .accordion-item:nth-child(1) button,
   .accordion-item:nth-child(1) button:not(.collapsed) {
     background: #E3716F;
