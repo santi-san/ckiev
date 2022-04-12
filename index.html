@@ -687,7 +687,7 @@
     </script> -->
     <!-- counter -->
     <script>
-        var section = document.querySelector('#hacemos');
+        var section = document.querySelector('#stats');
         var hasEntered = false;
         window.addEventListener('scroll', (e)=>{
         var shouldanimate = (window.scrollY + window.innerHeight) >= section.offsetTop;
@@ -695,7 +695,7 @@
             hasEntered = true;
             $('.value').each(function(){
                 $(this).prop('counter',0).animate({Counter:$(this).text()}, {
-                    duration: 6000,
+                    duration: 3000,
                     easing: 'swing',
                     step: function(now){
                         $(this).text(Math.ceil(now));
